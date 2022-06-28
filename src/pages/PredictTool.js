@@ -55,7 +55,7 @@ const PredictTool = () => {
             formData.append('glucose', glucose);
             formData.append('bmi', bmi);
             formData.append('smoking', smoking);
-            fetch(process.env.REACT_APP_URL, {
+            fetch('https://stroke-prediction-app-api.herokuapp.com/result', {
                 method: 'POST',
                 body: formData
             })
