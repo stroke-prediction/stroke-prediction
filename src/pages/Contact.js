@@ -35,7 +35,7 @@ const Contact = () => {
     const sendMail = (e) => {
         e.preventDefault();
         setLoading(true);
-        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
+        emailjs.sendForm('service_cc0m7fk', 'template_9uazg0r', form.current, '_r1wUpQ-YU6j5O3E7')
             .then(() => {
                 setLoading(false);
                 Swal.fire({
